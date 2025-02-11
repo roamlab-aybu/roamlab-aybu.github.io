@@ -1,0 +1,17 @@
+lab-website/
+├── content/
+│   ├── people/
+│   │   ├── faculty/
+│   │   │   └── jane-smith.md
+│   │   └── graduate/
+│   │       └── john-doe.md
+│   └── projects/
+│       ├── ongoing/
+│       │   └── quantum-computing.md
+│       └── completed/
+├── public/
+│   └── images/
+├── src/
+│   ├── components/
+│   ├── lib/
+│   └── app/
