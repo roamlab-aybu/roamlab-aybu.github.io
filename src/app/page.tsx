@@ -1,10 +1,9 @@
-import { getAllPeople, getNews } from '@/lib/markdown'
+import { getAllPeopleWithCategories, getNews } from '@/lib/markdown'
 import Header from '@/components/Header'
 import PersonCard from '@/components/PersonCard'
-import Link from 'next/link'
 
 export default function Home() {
-  const people = getAllPeople()
+  const people = getAllPeopleWithCategories()
   const news = getNews()
 
   return (
@@ -105,14 +104,14 @@ export default function Home() {
       <footer className="space-y-4 mb-4">
         <div className='w-full h-[1px] bg-gray-300' />
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <Link
+          <a
             href="https://aybu.edu.tr"
             className="hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
             © 2024 Ankara Yildirim Beyazit University
-          </Link>
+          </a>
         </div>
       </footer>
     </div>
