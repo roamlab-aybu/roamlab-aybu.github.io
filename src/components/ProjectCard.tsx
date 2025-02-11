@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import { Project, Person } from '@/lib/markdown'
 
@@ -28,7 +29,9 @@ export default function ProjectCard({ project, people }: ProjectCardProps) {
 
           {/* Project Info */}
           <div className="flex-grow">
-            <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+            <Link href={`/research/${project.slug}`} className="text-xl font-semibold mb-2 hover:underline cursor-pointer">
+              <h3>{project.title}</h3>
+            </Link>
             <p className="text-gray-600 mb-4">{project.description}</p>
 
             {/* Team Members */}
