@@ -1,11 +1,10 @@
 ---
 title: Quantum Computing Research
 description: Research on quantum algorithms and their applications
-image: /images/quantum-computing.jpg
+image:
 team:
-  - Dr. Jane Smith
-  - John Doe
-  - Sarah Johnson
+  - tozaslan
+  - uzygncr
 ---
 
 # Quantum Computing Research Project
