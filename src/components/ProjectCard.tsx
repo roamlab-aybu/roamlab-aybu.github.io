@@ -46,7 +46,8 @@ export default function ProjectCard({ project, people }: ProjectCardProps) {
                   <Image
                     src={person.image}
                     alt={person.name}
-                    fill
+                    width={32}
+                    height={32}
                     className="object-cover rounded-full"
                   />
                   <div className="absolute inset-0 rounded-full hover:bg-black/10 transition-colors" />
