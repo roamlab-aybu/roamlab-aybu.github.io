@@ -45,11 +45,6 @@ export function getAllProjects(): Project[] {
   return projects
 }
 
-// export function getProjectBySlug(slug: string): (Project & { content: string }) | undefined {
-//   const projects = getAllProjects()
-//   return projects.find(project => project.slug === slug)
-// }
-
 export async function markdownToHtml(markdown: string) {
   const result = await remark()
     .use(html)
