@@ -45,11 +45,6 @@ export function getAllProjects(): Project[] {
   return projects
 }
 
-// export function getProjectBySlug(slug: string): (Project & { content: string }) | undefined {
-//   const projects = getAllProjects()
-//   return projects.find(project => project.slug === slug)
-// }
-
 export async function markdownToHtml(markdown: string) {
   const result = await remark()
     .use(html)
@@ -81,7 +76,34 @@ export interface People {
   alumni: Person[]
 }
 
-export function getAllPeople(): People {
+export function getAllPeople(): { [key: string]: Person } {
+  const peoplePath = path.join(process.cwd(), 'content/people.md')
+  const fileContents = fs.readFileSync(peoplePath, 'utf8')
+  const { data } = matter(fileContents)
+
+  // Convert the nested array structure to flat object structure
+  const people: { [key: string]: Person } = {}
+
+  Object.entries(data).forEach(([key, value]) => {
+    if (Array.isArray(value) && value.length > 0) {
+      const person = value[0]
+      people[key] = {
+        slug: key,
+        name: person.name,
+        bio: person.bio,
+        image: person.image,
+        email: person.email,
+        role: person.role,
+        websiteUrl: person.websiteUrl,
+        graduationDate: person?.graduationDate
+      }
+    }
+  })
+
+  return people
+}
+
+export function getAllPeopleWithCategories(): People {
   const peoplePath = path.join(process.cwd(), 'content/people.md')
   const fileContents = fs.readFileSync(peoplePath, 'utf8')
   const { data } = matter(fileContents)

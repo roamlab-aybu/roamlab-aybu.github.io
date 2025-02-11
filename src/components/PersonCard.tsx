@@ -13,11 +13,12 @@ export default function PersonCard({ name, bio, image, websiteUrl }: Person) {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="relative w-32 h-32 mb-3">
+      <div className="relative mb-3">
         <Image
           src={image}
           alt={name}
-          fill
+          width={128}
+          height={128}
           className="object-cover rounded-full"
         />
       </div>

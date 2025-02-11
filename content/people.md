@@ -45,7 +45,7 @@ yilmaz:
   - name: Yilmaz Yilmaz
     bio: Alumni
     role: alumni
-    image: /people/yilmaz.jpg
+    image:
     email: yilmaz@aybu.edu.tr
-    websiteUrl: https://www.github.com/yilmaz
+    websiteUrl:
 ---
