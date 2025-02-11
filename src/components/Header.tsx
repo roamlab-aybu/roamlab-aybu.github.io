@@ -1,7 +1,19 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+  const pathname = usePathname()
+
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === path
+    }
+    return pathname.startsWith(path)
+  }
+
   return (
     <header className="w-full bg-white mb-8">
       <div className="w-full px-4 sm:px-6 lg:px-8 py-4">
@@ -11,21 +23,38 @@ export default function Header() {
               <Image
                 src="/aybu-logo.png"
                 alt="Aybu Logo"
-                width={120}
-                height={60}
-                className="mr-3"
+                width={122}
+                height={32}
               />
             </Link>
           </div>
 
           <nav className="flex space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900">
+            <Link
+              href="/"
+              className={`${isActive('/')
+                ? 'text-blue-600 font-bold'
+                : 'text-gray-700 hover:text-gray-900'
+                }`}
+            >
               Home
             </Link>
-            <Link href="/research" className="text-gray-700 hover:text-gray-900">
+            <Link
+              href="/research"
+              className={`${isActive('/research')
+                ? 'text-blue-600 font-bold'
+                : 'text-gray-700 hover:text-gray-900'
+                }`}
+            >
               Research
             </Link>
-            <Link href="/resources" className="text-gray-700 hover:text-gray-900">
+            <Link
+              href="/resources"
+              className={`${isActive('/resources')
+                ? 'text-blue-600 font-bold'
+                : 'text-gray-700 hover:text-gray-900'
+                }`}
+            >
               Resources
             </Link>
           </nav>
