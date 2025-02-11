@@ -29,7 +29,7 @@ export function getAllProjects(): Project[] {
 
       const fullPath = path.join(statusPath, file)
       const fileContents = fs.readFileSync(fullPath, 'utf8')
-      const { data, content } = matter(fileContents)
+      const { data } = matter(fileContents)
 
       projects.push({
         slug: file.replace(/\.md$/, ''),
@@ -115,10 +115,10 @@ export function getAllPeopleWithCategories(): People {
   }
 
   // Convert data object to array of entries and iterate
-  Object.entries(data).forEach(([key, personArray]) => {
+  Object.entries(data).forEach(([, personArray]) => {
     // Skip the non-array properties from frontmatter
     if (Array.isArray(personArray)) {
-      personArray.forEach((person: any) => {
+      personArray.forEach((person: Person) => {
         if (person.role && person.role in people) {
           people[person.role as keyof People].push(person)
         }

@@ -1,4 +1,4 @@
-import { getAllProjects, getAllPeopleWithCategories, getAllPeople } from '@/lib/markdown'
+import { getAllProjects, getAllPeople } from '@/lib/markdown'
 import ProjectCard from '@/components/ProjectCard'
 import Header from '@/components/Header'
 import Link from 'next/link'
