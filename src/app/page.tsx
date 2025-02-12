@@ -90,7 +90,16 @@ export default function Home() {
                 <div className="text-sm text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                   {people.alumni.map((person) => (
                     <div key={person.slug}>
-                      {person.name} ({person.graduationBio})
+                      {person.websiteUrl ? (
+                        <a href={person.websiteUrl} target="_blank" rel="noopener noreferrer">
+                          <span className="text-blue-500 hover:underline">{person.name}</span>
+                          {person.graduationBio && ` (${person.graduationBio})`}
+                        </a>
+                      ) : (
+                        <div>
+                          {person.name} ({person.graduationBio})
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
