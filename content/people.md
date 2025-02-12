@@ -13,7 +13,7 @@ sezgin:
   - name: Sezgin Güzel
     bio: Graduate Student
     role: graduate
-    image: /people/sezgin.jpg
+    image:
     email: sezgin@aybu.edu.tr
     websiteUrl: https://www.github.com/sezgin
 
@@ -22,9 +22,9 @@ bbsari:
   - name: BBSari BBSari
     bio: Undergraduate Student
     role: undergraduate
-    image: /people/bbsari.jpg
+    image:
     email: bbsari@aybu.edu.tr
-    websiteUrl: https://www.github.com/bbsari
+    websiteUrl:
 uzygncr:
   - name: Uzygncr Uzygncr
     bio: Undergraduate Student

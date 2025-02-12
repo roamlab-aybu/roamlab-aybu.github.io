@@ -15,7 +15,7 @@ export default function PersonCard({ name, bio, image, websiteUrl }: Person) {
     <div className="flex flex-col items-center">
       <div className="relative mb-3">
         <Image
-          src={image}
+          src={image || '/people/placeholder.png'}
           alt={name}
           width={128}
           height={128}
