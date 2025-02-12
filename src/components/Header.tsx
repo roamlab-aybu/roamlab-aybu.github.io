@@ -34,7 +34,7 @@ export default function Header() {
               href="/"
               className={`${isActive('/')
                 ? 'text-blue-600 font-bold'
-                : 'text-gray-700 hover:text-gray-900'
+                : 'text-gray-700 hover:text-gray-900 hover:font-bold'
                 }`}
             >
               Home
@@ -43,19 +43,10 @@ export default function Header() {
               href="/research"
               className={`${isActive('/research')
                 ? 'text-blue-600 font-bold'
-                : 'text-gray-700 hover:text-gray-900'
+                : 'text-gray-700 hover:text-gray-900 hover:font-bold'
                 }`}
             >
               Research
-            </Link>
-            <Link
-              href="/resources"
-              className={`${isActive('/resources')
-                ? 'text-blue-600 font-bold'
-                : 'text-gray-700 hover:text-gray-900'
-                }`}
-            >
-              Resources
             </Link>
           </nav>
         </div>
