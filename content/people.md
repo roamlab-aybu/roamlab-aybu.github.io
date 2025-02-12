@@ -47,6 +47,24 @@ yilmaz:
     role: alumni
     image:
     email: yilmaz@aybu.edu.tr
-    websiteUrl:
+    websiteUrl: https://www.github.com/yilmaz
     graduationBio: M.S., 2015. Now at Amazon.
+
+alper:
+  - name: Alper Alper
+    bio: Alumni
+    role: alumni
+    image:
+    email: alper@aybu.edu.tr
+    websiteUrl: https://www.github.com/alper
+    graduationBio: PhD, 2019. Now at Google.
+
+zeynep:
+  - name: Zeynep Zeynep
+    bio: Alumni
+    role: alumni
+    image:
+    email: zeynep@aybu.edu.tr
+    websiteUrl: https://www.github.com/zeynep
+    graduationBio: M.S., 2017. Now at Facebook.
 ---
