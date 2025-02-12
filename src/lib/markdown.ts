@@ -59,7 +59,7 @@ export interface Person {
   image: string
   email: string
   role: 'faculty' | 'graduate' | 'undergraduate' | 'alumni'
-  graduationDate?: string
+  graduationBio?: string
   websiteUrl?: string
 }
 
@@ -95,7 +95,7 @@ export function getAllPeople(): { [key: string]: Person } {
         email: person.email,
         role: person.role,
         websiteUrl: person.websiteUrl,
-        graduationDate: person?.graduationDate
+        graduationBio: person?.graduationBio
       }
     }
   })

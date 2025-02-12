@@ -48,4 +48,5 @@ yilmaz:
     image:
     email: yilmaz@aybu.edu.tr
     websiteUrl:
+    graduationBio: M.S., 2015. Now at Amazon.
 ---

@@ -87,10 +87,10 @@ export default function Home() {
             {people.alumni.length > 0 && (
               <div>
                 <h3 className="text-2xl font-semibold mb-6">Alumni</h3>
-                <div className="text-sm text-gray-600 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-2">
+                <div className="text-sm text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                   {people.alumni.map((person) => (
                     <div key={person.slug}>
-                      {person.name} ({person.graduationDate})
+                      {person.name} ({person.graduationBio})
                     </div>
                   ))}
                 </div>
