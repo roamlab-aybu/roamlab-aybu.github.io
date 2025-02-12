@@ -44,7 +44,7 @@ export default function ProjectCard({ project, people }: ProjectCardProps) {
                   style={{ zIndex: teamMembers.length - index }}
                 >
                   <Image
-                    src={person.image}
+                    src={person.image || '/people/placeholder.png'}
                     alt={person.name}
                     width={32}
                     height={32}

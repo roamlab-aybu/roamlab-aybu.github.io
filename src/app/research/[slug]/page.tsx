@@ -118,7 +118,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               >
                 <div className="w-12 h-12">
                   <Image
-                    src={person.image || '/placeholder-avatar.png'}
+                    src={person.image || '/people/placeholder.png'}
                     alt={person.name}
                     width={48}
                     height={48}
