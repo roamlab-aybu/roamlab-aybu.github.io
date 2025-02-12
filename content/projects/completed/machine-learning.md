@@ -1,7 +1,7 @@
 ---
 title: Machine Learning Research
 description: Research on advanced machine learning algorithms and their applications in real-world scenarios.
-image:
+image: /projects/machine-learning/icon.jpg
 team:
   - tozaslan
   - emingbt
