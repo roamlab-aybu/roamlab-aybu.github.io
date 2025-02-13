@@ -7,33 +7,40 @@ tozaslan:
     image: /people/tozaslan.jpeg
     email: tozaslan@aybu.edu.tr
     websiteUrl: https://www.github.com/tozaslan
+sdulkadir:
+  - name: Res. Asst. Sezgin Dulkadir
+    bio: Research Assistant
+    role: faculty
+    image: /people/sdulkadir.jpg
+    email: sezgindulkadir@aybu.edu.tr
+    websiteUrl: https://avesis.aybu.edu.tr/100355
 
 #Graduate
-sezgin:
-  - name: Sezgin Güzel
+pdemir:
+  - name: Pınar Demir
     bio: Graduate Student
     role: graduate
     image:
-    email: sezgin@aybu.edu.tr
-    websiteUrl: https://www.github.com/sezgin
+    email: pdemir@aybu.edu.tr
+    websiteUrl:
 
 #Undergraduate
-bbsari:
-  - name: BBSari BBSari
+bbergsarr:
+  - name: Buğra Berk Sarıoğlu
     bio: Undergraduate Student
     role: undergraduate
-    image:
-    email: bbsari@aybu.edu.tr
-    websiteUrl:
+    image: https://github.com/bbergsarr.png
+    email: bbergsarr@aybu.edu.tr
+    websiteUrl: https://www.github.com/bbergsarr
 uzygncr:
-  - name: Uzygncr Uzygncr
+  - name: Uzay Gençer
     bio: Undergraduate Student
     role: undergraduate
     image: https://github.com/uzygncr.png
     email: uzygncr@aybu.edu.tr
     websiteUrl: https://www.github.com/uzygncr
 emingbt:
-  - name: Emingbt Emingbt
+  - name: Mehmet Emin Göbütoğlu
     bio: Undergraduate Student
     role: undergraduate
     image: https://github.com/emingbt.png
@@ -56,7 +63,7 @@ alper:
     role: alumni
     image:
     email: alper@aybu.edu.tr
-    websiteUrl: https://www.github.com/alper
+    websiteUrl:
     graduationBio: PhD, 2019. Now at Google.
 
 zeynep:

@@ -4,7 +4,7 @@ description: Research on quantum algorithms and their applications
 image:
 team:
   - tozaslan
-  - bbsari
+  - bbergsarr
 images:
   - /projects/quantum-computing/circuit.gif
   - /projects/quantum-computing/results1.png
