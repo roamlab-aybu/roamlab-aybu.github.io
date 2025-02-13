@@ -21,10 +21,11 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
-                src="/aybu-logo.png"
+                src="/aybu-logo.webp"
                 alt="Aybu Logo"
                 width={122}
                 height={32}
+
               />
             </Link>
           </div>
