@@ -22,7 +22,7 @@ export default function PersonCard({ name, bio, image, websiteUrl }: Person) {
           className="object-cover rounded-full"
         />
       </div>
-      <h3 className="font-semibold text-lg">{NameComponent}</h3>
+      <h3 className="font-semibold text-lg text-center">{NameComponent}</h3>
       <p className="text-gray-600">{bio}</p>
     </div>
   )

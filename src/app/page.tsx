@@ -63,7 +63,7 @@ export default function Home() {
             {people.graduate.length > 0 && (
               <div className="mb-12">
                 <h3 className="text-2xl font-semibold mb-6">Graduate Students</h3>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {people.graduate.map((person) => (
                     <PersonCard key={person.slug} {...person} />
                   ))}
@@ -75,7 +75,7 @@ export default function Home() {
             {people.undergraduate.length > 0 && (
               <div className="mb-12">
                 <h3 className="text-2xl font-semibold mb-6">Undergraduate Students</h3>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {people.undergraduate.map((person) => (
                     <PersonCard key={person.slug} {...person} />
                   ))}
